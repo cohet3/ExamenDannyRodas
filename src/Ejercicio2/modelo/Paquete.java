@@ -13,6 +13,18 @@ public class Paquete {
         String[] palabras = mensaje.split("\\s+");
         return palabras.length;
     }
+    public void contadorPaquetes(int contadorPaquete){
+        this.contadorPaquetes= contadorPaquete;
+    }
+    @Override
+    public String toString() {
+        return "Paquete{" +
+                "ipOrigen='" + ipOrigen + '\'' +
+                ", ipDestino='" + ipDestino + '\'' +
+                ", mensaje='" + mensaje + '\'' +
+                ", contadorPaquetes=" + contadorPaquetes +
+                '}';
+    }
     //3. constructores
 
     public Paquete() {

@@ -11,7 +11,7 @@ public class PaquetePresentación {
         int longitudMensaje;
         String mensaje;
         //definicion de arrays
-        String[] palabras= new String[20];
+
         Paquete p1= new Paquete();
         //solicitar datos
         System.out.println("introduce una ipOrigen -> ");
@@ -34,16 +34,15 @@ public class PaquetePresentación {
         System.out.println("contador-> "+p1.getContadorPaquetes());
         //guardar los paquetes en un Array
         String [] palabra = mensaje.split("//s+");
-        for (int i = 0; i<=palabra.length; i++){
-
-             palabras[i]= palabra[i];
-
-        }
+        String[] palabras= new String[longitudMensaje];
+//        for (int i = 1; i<=20; i++){
+//            palabra[i] = palabras[i] ;
+//        }
         //mostrar array en consola
-        for (String elemento: palabras){
+        for (String elemento: palabra){
             System.out.println(elemento);
         }
-
+        System.out.println(p1.toString());
 
 
   /*      if(longitudMensaje<=20){
