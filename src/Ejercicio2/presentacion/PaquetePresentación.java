@@ -35,9 +35,9 @@ public class PaquetePresentación {
         //guardar los paquetes en un Array
         String [] palabra = mensaje.split("//s+");
         String[] palabras= new String[longitudMensaje];
-//        for (int i = 1; i<=20; i++){
-//            palabra[i] = palabras[i] ;
-//        }
+        for (int i = 1; i<=20; i++){
+          palabras[i]  = palabra[i]  ;
+        }
         //mostrar array en consola
         for (String elemento: palabra){
             System.out.println(elemento);
